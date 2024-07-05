@@ -1,0 +1,35 @@
+@use 'variables' as var;
+
+@mixin button-reset($button-type: transparent, $weight: 500, $text: var.$color-black, $padding: 0.8rem 1.5rem, $border-radius: 1.2rem) {
+    background: $button-type;
+    border: none;
+    font-family: "Poppins";
+    color: $text;
+    font-weight: $weight;
+    padding: $padding;
+    border-radius: $border-radius;
+}
+
+@mixin flex-center($direction: row, $justify: space-between, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin desktop {
+    @media (min-width: var.$large) {
+        @content;
+    }
+}
+
+@mixin shadow-radiusTop {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 50px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+}
+
+@mixin shadow-radiusBottom {
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}

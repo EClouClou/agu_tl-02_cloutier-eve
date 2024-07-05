@@ -1,0 +1,61 @@
+//PARTIALS
+@use "partials/mixins" as mixins;
+@use "partials/variables" as var;
+
+footer {
+    background-color: var.$color-black;
+    color: var.$color-white;
+    padding-top: 3rem;
+    text-align: center;
+    @include mixins.flex-center(column);
+    @include mixins.desktop {
+        }
+    }
+
+    div {
+        :nth-child(2) {
+            padding: 0;
+        }
+    }
+
+footer {
+    padding: 2rem;
+}
+
+.footer {
+    @include mixins.flex-center(column);
+    align-items: stretch;
+    @include mixins.desktop {
+        @include mixins.flex-center;
+        max-width: 1000px;
+        margin: 0 auto;
+        gap: 2rem;
+    }
+}
+
+.travail {
+    @include mixins.desktop {
+        text-align: left;
+        h6 {
+            padding: 0 0 1rem 0;
+        }
+    }
+}
+
+.references {
+    p {
+        font-size: 0.8rem;
+        padding: 0 1rem;
+        text-align: center;
+        @include mixins.desktop{
+            text-align: left;
+        }
+    }
+    a {
+        color: var.$color-white;
+        font-size: 0.8rem;
+    }
+    &:last-child{
+        padding-bottom: 2rem;
+    }
+}

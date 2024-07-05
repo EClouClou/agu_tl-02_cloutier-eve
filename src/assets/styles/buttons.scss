@@ -1,0 +1,24 @@
+//PARTIALS
+@use "partials/mixins" as mixins;
+@use "partials/variables" as var;
+
+.btn-green {
+    @include mixins.button-reset(var.$color-secondary, $text: var.$color-white);
+    a {
+        text-decoration: none;
+        color: var.$color-white;
+    }
+}
+
+.btn-white {
+    @include mixins.button-reset(var.$color-white, $text: var.$color-secondary);
+    a {
+        text-decoration: none;
+        color: var.$color-secondary;
+    }
+}
+
+.btn-border {
+    @include mixins.button-reset($button-type: var.$color-white, $text: var.$color-secondary);
+    border: 1px solid var.$color-secondary;
+}

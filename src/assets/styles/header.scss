@@ -1,0 +1,51 @@
+//PARTIALS
+@use "partials/mixins" as mixins;
+@use "partials/variables" as var;
+
+header {
+    @include mixins.flex-center;
+    padding: 0 1rem;
+
+    p {
+        padding-top: 1rem;
+    }
+    @include mixins.desktop{
+        display: grid;
+        grid-template-columns: 0.5fr 1.5fr;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 2rem 0; 
+    }
+}
+
+.menu-burger {
+    @include mixins.button-reset;
+    display: block;
+    padding: 0;
+    @include mixins.desktop {
+        display: none;
+    };
+}
+
+.menu-header {
+    @include mixins.flex-center(row, flex-end, center); 
+    gap: 1rem;
+}
+
+.menu-list {
+    display: none;
+    @include mixins.desktop {
+        @include mixins.flex-center;
+        gap: 1rem;
+    }
+}
+
+.rv {
+    display: none;
+    @include mixins.desktop {
+        display: block;
+        i {
+            padding-left: 0.5rem;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+//COLORS
+$rose: #F2BFAF;
+$vert: #009379;
+$vert-pale: #E5F4F2;
+$jaune: #F8D57E;
+$blanc: #FFFFFF;
+$gris-pale: #F8F9FF;
+$gris: #4E4D4D;
+$noir: #2D2D2D;
+
+$color-primary: $rose;
+$color-secondary: $vert;
+$color-secondaryP: $vert-pale;
+$color-accent: $jaune;
+$color-white: $blanc;
+$color-grey: $gris;
+$color-greyP: $gris-pale;
+$color-black: $noir;
+
+//BREAKPOINTS
+$small: 640px;
+$large: 1024px;
