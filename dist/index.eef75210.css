@@ -231,7 +231,7 @@ footer {
 
 .btn-green {
   color: #fff;
-  background: #009379;
+  background: #007b65;
   border: none;
   border-radius: 1.2rem;
   padding: .8rem 1.5rem;
@@ -245,7 +245,7 @@ footer {
 }
 
 .btn-white {
-  color: #009379;
+  color: #007b65;
   background: #fff;
   border: none;
   border-radius: 1.2rem;
@@ -255,14 +255,14 @@ footer {
 }
 
 .btn-white a {
-  color: #009379;
+  color: #007b65;
   text-decoration: none;
 }
 
 .btn-border {
-  color: #009379;
+  color: #007b65;
   background: #fff;
-  border: 1px solid #009379;
+  border: 1px solid #007b65;
   border-radius: 1.2rem;
   padding: .8rem 1.5rem;
   font-family: Poppins;
